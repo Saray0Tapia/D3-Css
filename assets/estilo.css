@@ -1,0 +1,149 @@
+.nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;  
+    padding-left: 5px;
+    align-content: center;
+    background-color: #00c6fc;
+    
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: antiquewhite;
+}
+.menu{
+    
+    display: flex;
+    flex-direction: column;
+       
+}
+.iconos{
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+}
+
+.categoria{
+    display: flex;
+    gap: 8px;
+    padding-top: 0px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    }
+
+.main{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: #cbcbcb;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+    .gride{
+        display: grid;
+        margin-left: 40px;
+        margin-top: 10px;
+        gap: 30px;
+        margin-left: 30px;
+    
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        box-shadow: black;
+        margin-right: 20px;
+        border-radius: 0%;
+        width: 370px;
+    }
+
+    .card img{
+        height: 250px;
+        width: 220px;
+    }
+    .nombre{
+        padding-top: 8px;
+        padding-bottom: 8px;
+ 
+    }
+
+    .boton{
+        background-color: #16e261;
+        height: 20px;
+        width: 100px;
+        margin-left: 30%;
+        margin-bottom: 30px;
+
+    }
+    .item{
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .camiseta{
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+   .head{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    }
+    .filtro{
+        padding-bottom: 0%;}
+    .form-select{
+        width: 60%;
+        margin-left: 35px;
+       }
+         
+   
+   .footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 475px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 60px;
+    background-color: rgb(127, 236, 255);
+}
+
+
+@media screen and(max-width: 575px) {
+
+body{
+grid-template-columns: 20% 80%;
+grid-template-rows: 1fr 10fr 1fr;
+grid-template-areas:
+"nav nav"
+"main main"
+"footer footer";
+}
+
+
+}
+
+
+@media (min-width:576px) {
+body{
+grid-template-columns: 15% 85%;
+grid-template-areas:
+"nav main"
+"nav main"
+"nav footer";
+}
+
+
+}
